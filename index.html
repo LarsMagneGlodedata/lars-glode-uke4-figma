@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="no">
   <head>
-    <title>Hjem</title>
-    <link rel="icon" type="image/x-icon" href="home.png" />
+    <title>World of Warcraft</title>
+    <link rel="icon" type="image/x-icon" href="wow-icon.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link
@@ -12,9 +12,12 @@
 
     <link
       rel="stylesheet"
-      media="screen and (min-width: 700px)"
-      href="styles700+px.css"
+      media="screen and (min-width: 1200px)"
+      href="styles1200+px.css"
     />
+    <link rel="stylesheet" 
+    media="screen and (min-width: 700px) and (max-width: 1199px)"
+    href="styles700-1199px.css">
     <link
       rel="stylesheet"
       media="screen and (max-width: 699px)"
@@ -24,46 +27,41 @@
   </head>
   <body>
     <header>
-      <a href="#a0"><img class="logo" src="html-logo.jpg" alt="logo" /></a>
+      <a href="#a0"><img class="logo" src="World-of-Warcraft-Logo-2004-present.png" alt="logo" /></a>
       <a href="javascript:void(0);" class="icon">
         <i class="fa fa-bars"></i>
       </a>
       <nav>
         <div class="nav1">
-          <a href="">Placeholder</a>
-          <a href="">Placeholder</a>
-          <a href="">Placeholder</a>
+          <a href="#a2">Versions</a>
+          <a href="#a1">About</a>
         </div>
         <div class="links">
           <div id="myLinks">
-            <a href="">Placeholder</a>
-            <a href="">Placeholder</a>
-            <a href="">Placeholder</a>
+            <a href="#a2">Versions</a>
+            <a href="#a1">About</a>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section id="a2" class="hero">
         <div class="hero-text">
-          <h1>Velkommen til min side</h1>
-          <p class="hero-p" id="a1">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-            voluptatem perspiciatis eius vel error enim, aut rerum hic sequi at
-            nihil quidem mollitia quis modi vero autem, accusamus omnis
-            exercitationem. Necessitatibus atque veniam rerum esse odit eaque
-            blanditiis sapiente dolorum quis. Harum quam quis a nulla laboriosam
-            maiores. Nostrum labore obcaecati itaque nobis tempora iusto
-            dolorum, nisi error ducimus illum.
-          </p>
+          <h1>WELCOME</h1>
         </div>
-        <img class="hero-img" src="code-img.jpg" alt="bilde" />
+        <div class="hero-cards">
+
+        <img class="container" src="The-war-within.jpg" alt="The-war-within">
+        <img class="container" id="cata" src="cata-classic.jpg" alt="Cataclysm Classic">
+        <img class="container" src="Mists-of-Pandaria-Classic.webp" alt="Mist of Pandaria">
+        <img class="container" src="world-of-warcraft-classic.jpg" alt="Classic">
+        <img class="container" src="world-of-warcraft-classic-hardcore.jpg" alt="Classic Hardcore">
+        <img class="container" src="world-of-warcraft-wow-classic-season-of-discovery.jpg" alt="Classic Season of Discovery">
+        </div>
       </section>
-      <section class="">
-        <h2>Placeholder</h2>
-      </section>
-      <section class="">
-        <h2>Placeholder</h2>
+      <section id="a1" class="about">
+        <h2>About</h2>
+        <p class="about-text">World of Warcraft (WoW) is a 2004 massively multiplayer online role-playing (MMORPG) video game developed and published by Blizzard Entertainment for Windows and Mac OS X. Set in the Warcraft fantasy universe, World of Warcraft takes place within the world of Azeroth, approximately four years after the events of the previous game in the series, Warcraft III: The Frozen Throne.[3] The game was announced in 2001, and was released for the 10th anniversary of the Warcraft franchise on November 23, 2004. Since launch, World of Warcraft has had ten major expansion packs: The Burning Crusade (2007), Wrath of the Lich King (2008), Cataclysm (2010), Mists of Pandaria (2012), Warlords of Draenor (2014), Legion (2016), Battle for Azeroth (2018), Shadowlands (2020), Dragonflight (2022), and The War Within (2024). Two further expansions, Midnight and The Last Titan, were announced in 2023.</p>
       </section>
     </main>
     <footer>
@@ -71,26 +69,30 @@
         <li>Lars Magne</li>
         <li>Bergen</li>
         <li>Gløde data</li>
+        <li>Credit: Wikipedia</li>
       </ul>
+      <a href="https://worldofwarcraft.blizzard.com/en-gb/">
+        <img src="wow-icon.png" alt="">
+      </a>
       <ul class="social">
-        <li>
-          <a href="https://github.com/LarsMagneGlodedata"
-            ><img class="git-logo" src="git-logo-2.png" alt="github"
+        <li class="some-li">
+          <a href="https://www.youtube.com/user/WorldofWarcraft"
+            ><img class="some-cont" src="yt-logo.png" alt="youtube"
           /></a>
         </li>
-        <li>
-          <a href="https://facebook.com"
+        <li class="some-li">
+          <a href="https://www.facebook.com/WorldofWarcraft.eu"
             ><img
-              class="fb-logo"
-              src="facebook-Black-Squre-logo-01.jpg"
+              class="some-cont"
+              src="fb-logo.png"
               alt="facebook"
           /></a>
         </li>
-        <li>
-          <a href="https://instagram.com"
+        <li class="some-li">
+          <a href="https://www.instagram.com/warcraft/#"
             ><img
-              class="ig-logo"
-              src="instagram-black-background.jpg"
+              class="some-ig"
+              src="Ig-logo.png"
               alt="instagram"
           /></a>
         </li>

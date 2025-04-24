@@ -2,34 +2,27 @@
 * {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-}
+  scroll-behavior: smooth;
 
-section {
-  height: 100vh;
-}
-
-img {
-  margin: 10px;
 }
 
 /* BODY */
 body {
+  display: flex;
+  flex-direction: column;
   color: black;
-  background-color: rgb(255, 255, 255);
+  background-color: #2d2d2d;
   margin: 0;
 }
 
+
 /* HEADER */
 header {
-  align-items: flex-start;
-  height: auto;
-  position: sticky;
-  top: 0;
-  background-color: rgba(14, 14, 14, 0.87);
-  box-shadow: 0 0 50px 1px;
+  display: flex;
+  align-items: center;
+  background-color: #2a2a2a;
+  justify-content: space-evenly;
   flex-direction: column;
-  border-radius: 0 0 15px 15px;
-  overflow: hidden;
 }
 
 #myLinks {
@@ -40,73 +33,118 @@ header {
   display: none;
 }
 
-.icon {
-  border-radius: 5px;
-  padding: 5px;
-  display: block;
-  position: absolute;
-  right: 20px;
-  top: 25px;
-  color: white;
+.logo {
+  padding: 5px 5px;
+  max-width: 200px;
+  height: auto;
 }
 
 .fa {
+  color: white;
+  position: absolute;
+  right: 45px;
+  top: 50px;
   font-size: xx-large;
 }
 
-#myLinks a {
-  display: block;
-  background-color: #eee;
-  color: rgb(0, 0, 0);
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a;
+  border: 1px solid #2a2a2a;
+  width: 250px;
+  height: 50px;
   text-decoration: none;
-  padding: 1%;
-  margin: 2px 0 0 0;
-}
+  color: #929292;
+  border-radius: 25px;
+  transition: 0.3s;
 
-.logo {
-  padding: 14px 5px;
-  max-width: 40px;
-  border-radius: 50%;
-  height: auto;
 }
 
 /* MAIN */
 .hero {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250vh;
 }
 
-.hero-text {
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: 'jacues francois';
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow:
+  1px 1px 2px rgb(0, 0, 0),
+  0 0 1em rgb(255, 255, 255),
+  0 0 0.2em rgb(255, 255, 255);
+  letter-spacing: 20px;
+  margin-bottom: 100px;
+}
+
+.hero-cards {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+.container {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 25px;
+  transition: 0.5s;
+  box-shadow: 0 0 20px 1px #000000;
+  margin: 30px 0;
+}
+
+
+.container:hover {
+  box-shadow: 0 0 50px 1px #000000;
+  width: 350px;
+  height: 350px;
+}
+
+.about {
+  display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 50px;
+  justify-content: center;
+  height: 150vh;
 }
 
-.hero-img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: 'jacues francois';
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow:
+  1px 1px 2px rgb(0, 0, 0),
+  0 0 1em rgb(255, 255, 255),
+  0 0 0.2em rgb(255, 255, 255);
+  letter-spacing: 20px;
+}
+
+.about-text {
+  width: 80%;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 
 /* FOOTER */
 footer {
   color: white;
   display: flex;
-  justify-content: space-evenly;
-  background-color: rgb(0, 0, 0);
-  position: sticky;
-  left: 0;
-  bottom: 0;
+  justify-content: space-around;
+  background-color: #323232;
   align-items: center;
-  border-radius: 15px 15px 0 0;
-  box-shadow: 0 0 50px 1px black;
 }
 
 ul li {
   font-size: 15px;
-  width: 30vw;
 }
 
 ul {
@@ -116,20 +154,33 @@ ul {
 
 .social {
   display: flex;
-  width: 10vw;
-  justify-content: center;
+  align-items: center;
+  just
 }
 
-.ig-logo {
-  max-width: 60px;
+.some-li {
+  padding: 0 15px 0 0;
+  transition: 0.2s;
 }
 
-.fb-logo {
-  padding-left: 12px;
-  padding-top: 8px;
-  max-width: 29px;
+.some-cont:hover {
+  filter: brightness(80%);
 }
 
-.git-logo {
-  max-width: 43px;
+.some-ig:hover {
+  filter: brightness(80%);
 }
+
+.some-cont {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.some-ig {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+
