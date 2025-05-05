@@ -1,46 +1,261 @@
-.anim-typewriter {
+/* ANIMASJON TIL TYPEWRITER FOR ABOUT */
+/* NOTE: Da hadde sikkert vert lettare å gjera med js, men ville prøva å gjera da kun i CSS, så detta e pretty much hardcoding :D */
+/* NB! SKJERMEN MÅ VÆRA MINST 1250px BREI FOR AT DETTA SKAL SJÅ BRA UT :D */
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anima1 {
+    height: 40px;
     overflow: hidden;
-    animation: typewriter 10s steps(889) 1s 1 normal both,
-    blinkTextCursor 500ms steps(889) infinite normal;
+    white-space: nowrap;
+    border-right: .15em solid transparent;
+    animation: typewriter1 5s steps(105) 1s 1 normal both,
+    blinkTextCursor1 6s 1;
 }
 
-@keyframes typewriter {
-    0% {
+@keyframes typewriter1 {
+    from {
         width: 0;
-        height: 0;
     }
-    10% {
-        height: 4vh;
-        width: 60em;
-    }
-    20% {
-        height: 8vh;
-    }
-    30% {
-        height: 12vh;
-    }
-    40% {
-        height: 16vh;
-    }
-    50% {
-        height: 20vh;
-    }
-    60% {
-        height: 24vh;
-    }
-    70% {
-        height: 28vh;
-  }
-    80% {
-        height: 32vh;
-    }
-    100% {
-        width: 60em;
-        height: 36vh;
+    to {
+        width: 1222px;
     }
 }
 
-@keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
-  }
+@keyframes blinkTextCursor1 {
+    0% {
+        border-color: orange;
+    }
+    99% {
+        border-color: orange;
+    }
+}
+
+.anima2 {
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid transparent;
+    animation: typewriter2 5s steps(105) 6s 1 normal both,
+    blinkTextCursor2 5s 6s 1;
+}
+
+@keyframes typewriter2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 1161px;
+    }
+}
+
+@keyframes blinkTextCursor2 {
+    0% {
+        border-color: orange;
+    }
+    99% {
+        border-color: orange;
+    }
+}
+
+.anima3 {
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid transparent;
+    animation: typewriter3 5s steps(105) 11s 1 normal both,
+    blinkTextCursor3 5s 11s 1;
+}
+
+@keyframes typewriter3 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 1146px;
+    }
+}
+
+@keyframes blinkTextCursor3 {
+    0% {
+        border-color: orange;
+    }
+    99% {
+        border-color: orange;
+    }
+}
+
+.anima4 {
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid transparent;
+    animation: typewriter4 5s steps(105) 16s 1 normal both,
+    blinkTextCursor4 5s 16s 1;
+}
+
+@keyframes typewriter4 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 1176px;
+    }
+}
+
+@keyframes blinkTextCursor4 {
+    0% {
+        border-color: orange;
+    }
+    99% {
+        border-color: orange;
+    }
+}
+
+.anima5 {
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid transparent;
+    animation: typewriter5 5s steps(105) 21s 1 normal both,
+    blinkTextCursor5 5s 21s 1;
+}
+
+@keyframes typewriter5 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 1161px;
+    }
+}
+
+@keyframes blinkTextCursor5 {
+    0% {
+        border-color: orange;
+    }
+    99% {
+        border-color: orange;
+    }
+}
+
+.anima6 {
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid transparent;
+    animation: typewriter6 5s steps(105) 26s 1 normal both,
+    blinkTextCursor6 5s 26s 1;
+}
+
+@keyframes typewriter6 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 1146px;
+    }
+}
+
+@keyframes blinkTextCursor6 {
+    0% {
+        border-color: orange;
+    }
+    99% {
+        border-color: orange;
+    }
+}
+
+.anima7 {
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid transparent;
+    animation: typewriter7 5s steps(105) 31s 1 normal both,
+    blinkTextCursor7 5s 31s 1;
+}
+
+@keyframes typewriter7 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 1161px;
+    }
+}
+
+@keyframes blinkTextCursor7 {
+    0% {
+        border-color: orange;
+    }
+    99% {
+        border-color: orange;
+    }
+}
+
+.anima8 {
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid transparent;
+    animation: typewriter8 5s steps(105) 36s 1 normal both,
+    blinkTextCursor8 5s 36s 1;
+}
+
+@keyframes typewriter8 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 1115px;
+    }
+}
+
+@keyframes blinkTextCursor8 {
+    0% {
+        border-color: orange;
+    }
+    99% {
+        border-color: orange;
+    }
+}
+
+.anima9 {
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid transparent;
+    animation: typewriter9 4s steps(105) 41s 1 normal both,
+    blinkTextCursor9 4s 41s 1,
+    blinkTextCursor0 0.5s 45s infinite;
+}
+
+@keyframes typewriter9 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 595px;
+    }
+}
+
+@keyframes blinkTextCursor9 {
+    0% {
+        border-color: orange;
+    }
+    99% {
+        border-color: orange;
+    }
+}
+
+@keyframes blinkTextCursor0 {
+    from {
+        border-color: orange;
+    }
+    to {
+        border-color: transparent;
+    }
+}
